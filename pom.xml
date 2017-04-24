@@ -6,7 +6,7 @@
   <artifactId>startup-cdi</artifactId>
   <name>WildFly Swarm Example</name>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <version.wildfly.swarm>2017.4.0</version.wildfly.swarm>
@@ -29,7 +29,7 @@
   </dependencyManagement>
 
   <build>
-    <finalName>demo</finalName>
+    <finalName>startup-cdi</finalName>
     <plugins>
       <plugin>
         <groupId>org.wildfly.swarm</groupId>
