@@ -7,9 +7,6 @@ import javax.ejb.LockType;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 
-/**
- * Forged in the flames of battle by alex.
- */
 @Startup
 @Lock(LockType.READ)
 @Singleton
