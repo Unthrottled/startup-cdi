@@ -13,7 +13,7 @@ import javax.ejb.Startup;
 @Startup
 @Lock(LockType.READ)
 @Singleton
-public class EJBStartupSingeltonBean {
+public class EJBStartupSingletonBean {
     @PostConstruct
     void initialize(){
         System.err.println("EJB Singleton Bean Doing Startup Work!");
