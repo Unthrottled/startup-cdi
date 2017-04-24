@@ -1,13 +1,14 @@
-package io.acari.beans;
+package io.acari;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.ejb.Lock;
 import javax.ejb.LockType;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 
 /**
- * Created by alex on 4/23/17.
+ * Forged in the flames of battle by alex.
  */
 @Startup
 @Lock(LockType.READ)
@@ -15,11 +16,11 @@ import javax.ejb.Startup;
 public class EJBStartupSingeltonBean {
     @PostConstruct
     void initialize(){
-        System.out.println("EJB Singleton Bean Doing Startup Work!");
+        System.err.println("EJB Singleton Bean Doing Startup Work!");
     }
 
-    @Override
-    public String toString() {
-        return "EJBStartupSingeltonBean";
+    @PreDestroy
+    void shutdown(){
+        System.err.println("EJB Singleton Bean Doing Cleanup Work before shutdown!");
     }
 }
