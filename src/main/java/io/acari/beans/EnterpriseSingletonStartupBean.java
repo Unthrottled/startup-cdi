@@ -1,4 +1,4 @@
-package io.acari;
+package io.acari.beans;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.Lock;
