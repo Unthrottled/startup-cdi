@@ -10,8 +10,12 @@ If you answered yes to any of these questions, then this example  should help!
 
 To run the sample you will need:
  - Internet Connection (At least the first time it is run)
- - Java 8 runtime
- - Maven 3.x.x
+ - [Java 8 runtime](http://blog.acari.io/jvm/2017/05/05/Gradle-Install.html)
+ - [Maven 3.x.x](https://www.mkyong.com/maven/how-to-install-maven-in-windows/) or you could use [SDKMAN](http://sdkman.io/) and enter the following command
+    
+        sdk install maven
+    
+  _Boom!_ Done!
  
  All you have to do:
  1. Open a command line. 
