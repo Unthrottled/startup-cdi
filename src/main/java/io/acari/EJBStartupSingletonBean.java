@@ -12,12 +12,12 @@ import javax.ejb.Startup;
 @Singleton
 public class EJBStartupSingletonBean {
     @PostConstruct
-    void initialize(){
+    void initialize() {
         System.err.println("EJB Singleton Bean Doing Startup Work!");
     }
 
     @PreDestroy
-    void shutdown(){
+    void shutdown() {
         System.err.println("EJB Singleton Bean Doing Cleanup Work before shutdown!");
     }
 }
